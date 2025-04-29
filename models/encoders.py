@@ -13,7 +13,7 @@ class ImageEncoder(nn.Module):
     def forward(self, x):
         return self.base_model(x)
 
-# Encoder para Texto
+# Encoder para Texto -> arquitetura transformers (BERT) -> SÓ ENCONDER muuuita teoria (equações, pq de tudo)
 class TextEncoder(nn.Module):
     def __init__(self, vocab_size, embed_dim=128):
         super(TextEncoder, self).__init__()
